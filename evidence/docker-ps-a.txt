@@ -1,0 +1,3 @@
+﻿CONTAINER ID   IMAGE                                 COMMAND           CREATED          STATUS                        PORTS                                         NAMES
+5ecf5e534cad   js9872/lab8-joey_sade:0.0.2-RELEASE   "python app.py"   46 seconds ago   Up 44 seconds                 0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp   lab8-v2
+bc52695a04ee   js9872/lab8-joey_sade:0.0.1-RELEASE   "python app.py"   47 seconds ago   Exited (137) 19 seconds ago                                                 lab8-v1

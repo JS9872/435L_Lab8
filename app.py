@@ -90,6 +90,13 @@ def api_get_users():
     return jsonify(get_users())
 
 
+@app.get("/api/get_users")
+def api_get_user_names():
+    with connect_to_db() as connection:
+        names = [row["name"] for row in connection.execute("SELECT name FROM users ORDER BY user_id")]
+    return jsonify(names)
+
+
 @app.get("/api/users/<int:user_id>")
 def api_get_user(user_id):
     user = get_user_by_id(user_id)
