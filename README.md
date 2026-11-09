@@ -24,3 +24,5 @@ docker logs lab8-v1
 ```
 
 `docker ps -a` lists all containers, including stopped ones. `docker stop` sends a termination signal to the named container. `docker logs` prints that container's standard output and error. These commands use a **container name or ID**, even though the handout says image name.
+
+Full report with embedded command and Docker Desktop screenshots: Lab8_Report_Joey_Sade.docx (PDF copy included).
